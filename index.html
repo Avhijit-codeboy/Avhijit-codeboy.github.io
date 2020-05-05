@@ -32,21 +32,56 @@
 			position:absolute;
 			left:65%;
 			top:40%;
-			width:350px;
-			height:350px;
+			width:30%;
+			height:50%;
 			background:rgba(255,255,255);
 			box-shadow:1px 1px 5px rgb(0,0,0);
+		}
+		@media only screen and (min-width: 600px) {
+			#controlPanel{
+			position:absolute;
+			left:65%;
+			top:40%;
+			width:30%;
+			height:60%;
+			background:rgba(255,255,255);
+			box-shadow:1px 1px 5px rgb(0,0,0);
+		}
 		}
 		#controlPanel p:first-child{
 			text-align:center;
 			font-size:30px;
 			text-shadow:1px 1px 3px rgb(0,0,0);
 		}
+		@media only screen and (max-width: 600px) {
+			#controlPanel p:first-child{
+			text-align:center;
+			font-size:15px;
+			text-shadow:1px 1px 3px rgb(0,0,0);
+		}
+		}
+		@media only screen and (max-width: 600px) {
+			#olid li{
+			font-size:15px;
+			text-shadow:1px 1px 3px rgb(100,0,180);
+			font-family:'Comic Sans MS';
+		}
+		}
 		#controlPanel ol{
 			font-size:24px;
 			text-shadow:1px 1px 3px rgb(100,0,180);
 			font-family:'Comic Sans MS';
 		}
+		#info{
+			position:absolute;
+			top:20%;
+			left:10px;
+			font-size:2.5vw;
+			font-family:'aerial';
+			font-style:bold;
+			text-shadow:1px 1px 3px black;
+		}
+		@media only screen and (min-width:600px){
 		#info{
 			position:absolute;
 			top:15%;
@@ -56,6 +91,20 @@
 			font-style:bold;
 			text-shadow:1px 1px 3px black;
 		}
+	}
+		#country{
+			position:absolute;
+			top:30%;
+			left:2%;
+			width:25%;
+			height:3%;
+			border-radius:10%;
+			box-shadow:1px 1px 5px black;
+			color:orange;
+			font-size:15px;
+			text-align:center;
+		}
+		@media only screen and (min-width:600px){
 		#country{
 			position:absolute;
 			top:30%;
@@ -68,14 +117,25 @@
 			font-size:20px;
 			text-align:center;
 		}
+	}
+		#date{
+			position:absolute;
+			top:25%;
+			left:2%;
+			width:20%;
+			height:30px;
+			font-size:10px;
+		}
+		@media only screen and (min-width:600px){
 		#date{
 			position:absolute;
 			top:30%;
-			left:2%;
-			width:15%
+			left:1%;
+			width:15%;
 			height:30px;
 			font-size:20px;
 		}
+	}
 		.chart-container{
 			position:relative;
 			height:70vh;
@@ -84,11 +144,20 @@
 		}
 		#graph{
 			position:absolute;
+			top:90%;
+			font-size:2.5vw;
+			left:1%;
+			text-shadow:1px 1px 5px rgb(0,0,0);
+		}
+		@media only screen and (min-width:600px){
+		#graph{
+			position:absolute;
 			top:620px;
 			font-size:2.5vw;
 			left:1%;
 			text-shadow:1px 1px 5px rgb(0,0,0);
 		}
+	}
 	</style>
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
